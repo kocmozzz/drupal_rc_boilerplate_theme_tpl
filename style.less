@@ -1,0 +1,75 @@
+/*webfonts*/
+/*@font-face {
+    font-family: 'fontin_sans_cr_scregular';
+    src: url('webfonts/fontinsans_cyrillic_sc_46b-webfont.eot');
+    src: url('webfonts/fontinsans_cyrillic_sc_46b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/fontinsans_cyrillic_sc_46b-webfont.woff') format('woff'),
+         url('webfonts/fontinsans_cyrillic_sc_46b-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+/*default variables*/
+@default_font_family: Helvetica, Arial, sans-serif;
+@default_font_size: 14px;
+@default_line_height: 20px;
+@default_text_color: black;
+@default_link_color: #0498a9;
+@default_hover_link_color: #fcaf12;
+@waldruhe_green: #82B321;
+
+/*default element styles*/
+a {
+	color: @default_link_color;
+
+	&:hover {
+		color: @default_hover_link_color;
+	}
+}
+p {
+	margin: 0 0 1em;
+}
+h2 {
+	.bold;
+	font-size: @default_font_size + 5;
+	margin: 0 0 1em;
+}
+
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+
+.inline-block {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+.nodecoration {
+	text-decoration: none;
+}
+.hidden {
+	display: none;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+	font-family: @default_font_family;
+	font-size: @default_font_size;
+	line-height: @default_line_height;
+	color: @default_text_color;
+}
+
+/*page layout*/
+.page_wrapper {
+	min-height: 100%;
+	min-width: 1000px;
+    	height: auto !important;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}

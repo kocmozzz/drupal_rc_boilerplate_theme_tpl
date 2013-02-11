@@ -1,0 +1,21 @@
+name = 'Theme'
+description = 'Theme description'
+core = '7.x'
+engine = 'phptemplate'
+screenshot = 'screenshot.png'
+core = 7.x
+
+stylesheets[all][] = normalize.css
+stylesheets[all][] = style.css
+// stylesheets[all][] = style.less
+
+scripts[] = scripts/functions.js
+
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[footer] = Footer
+regions[studio_sign] = Studio sign
